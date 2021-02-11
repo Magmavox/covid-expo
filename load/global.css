@@ -1,0 +1,68 @@
+/* Import font. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Main background. */
+.fwds3dcov-main-background{}
+
+/* Scrollbar text */
+.fwds3dcov-scrollbar-text{
+	font: 300 12px Roboto !important;
+}
+
+/* Categories menu. */
+.fwds3dcov-menu-button{
+	font: 500 14px Roboto !important;
+	text-transform: uppercase;
+}
+
+/* Video and audio time. */
+.fwds3dcov-time{
+	font: 400 14px Roboto !important;
+}
+
+/* Thumbnails text. */
+.fwds3dcov-header{
+	font: 400 22px Roboto !important;
+	line-height: 26px !important;
+	text-align:center;
+	margin: 9px 20px 0;
+	color:#E4E4E4;
+}
+
+.fwds3dcov-text{
+	font: 400 14px Roboto !important;
+	line-height: 20px !important;
+	text-align:center;
+	margin: 9px 20px 0;
+	color:#777777;
+}
+
+/* Lightbox text. */
+.fwds3dcov-lightbox-header{
+	font: bold 28px Roboto !important;
+	line-height: 33px !important;
+	text-align: center;
+	margin: 23px 20px 6px;
+	color:#FFFFFF;
+}
+
+.fwds3dcov-lightbox-paragraph{
+	font: normal 14px Roboto !important;
+	line-height: 24px !important;
+	text-align: center;
+	margin: 10px 20px 26px;
+	color:#E4E4E4;
+}
+
+@media screen and (max-width: 600px){
+	.fwds3dcov-lightbox-header{
+		font-size: 16px !important;
+		line-height: 20px !important;
+	}
+
+	.fwds3dcov-lightbox-paragraph{
+		font-size: 12px !important;
+		line-height: 16px !important;
+		margin-bottom: 20px;
+	}
+}
