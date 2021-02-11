@@ -1,4 +1,4 @@
-		function initCoverflow() {
+		(() => {
 			FWDRLS3DUtils.onReady(function(){
 				var coverflow = new FWDSimple3DCoverflow({
 					
@@ -94,4 +94,4 @@
 					
 				});
 			});
-		}
+		})();
