@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple 3D Coverflow</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<!-- Imports required for the css and js files -->
+		<link rel="stylesheet" type="text/css" href="load/global.css"/>
+		<script type="text/javascript" src="FWDSimple3DCoverflow.js"></script>
+		
+		<!-- Setup the coverflow (all settings are explained in detail in the documentation files) -->
+		<script type="text/javascript">
+
+		function initCoverflow() {
+			FWDRLS3DUtils.onReady(function(){
+				var coverflow = new FWDSimple3DCoverflow({
+					
+					//required settings
+					coverflowHolderDivId:"coverflowDiv",
+        			coverflowDataListDivId:"coverflowBlock",
+        			displayType:"responsive",
+        			coverflowWidth:5000,
+        			coverflowOffsetHeight:140,
+        			mainFolderPath:"https://cdn.jsdelivr.net/gh/Magmavox/covid-expo/load",
+        			skinPath:"skin_black",
+        			initializeOnlyWhenVisible:"no",
+												
+					//main settings
+					backgroundColor:"#112530",
+					backgroundImagePath:"",
+					backgroundSize:"auto",
+					backgroundPosition:"center",
+					backgroundRepeat:"repeat",
+					coverflowStartPosition:"left",
+					coverflowTopology:"flipping",
+					coverflowXRotation:0,
+					coverflowYRotation:30,
+					numberOfThumbnailsToDisplayLeftAndRight:"all",
+					infiniteLoop:"no",
+					rightClickContextMenu:"developer",
+					useDragAndSwipe:"yes",
+					fluidWidthZIndex:1000,
+					preloaderbackgroundColor:"#1d1d1d",
+					preloaderFillColor:"#E4E4E4",
+					
+					//thumbnails settings
+					useDefaultThumbnailsWidthAndHeight:"no",
+					thumbnailWidth:500,
+					thumbnailHeight:329,
+					thumbnailMaxHeight:500,
+					thumbnailResizeOffest:100,
+					textMaxWidth:530,
+					thumbnailXOffset3D:86,
+					thumbnailXSpace3D:78,
+					thumbnailZOffset3D:200,
+					thumbnailZSpace3D:93,
+					thumbnailYAngle3D:70,
+					thumbnailHoverOffset:0,
+					thumbnailBorderSize:0,
+					thumbnailOffsetY:0,
+					thumbnailBackgroundColor:"#4a4a4a",
+					thumbnailBorderColor1:"#FFFFFF",
+					thumbnailBorderColor2:"#FFFFFF",
+					transparentImages:"no",
+					thumbnailsAlignment:"bottom",
+					maxNumberOfThumbnailsOnMobile:20,
+					showThumbnailsGradient:"no",
+					thumbnailGradientColor1:"rgba(29, 29, 29, 0)",
+					thumbnailGradientColor2:"rgba(29, 29, 29, 1)",
+					showText:"yes",
+					textOffset:10,
+					showThumbnailBoxShadow:"yes",
+					thumbnailBoxShadowCss:"0px 2px 2px #1d1d1d",
+					reflectionHeight:50,
+					reflectionDistance:0,
+					reflectionOpacity:.2,
+										
+					//controls settings
+					slideshowDelay:5000,
+					autoplay:"no",
+					disableNextAndPrevButtonsOnMobile:"no",
+					controlsMaxWidth:530,
+					controlsPosition:"bottom",
+					controlsOffset:-23,
+					showLargeNextAndPrevCoverflowButtons:"no",
+					largeNextAndPrevButtonsOffest:20,
+					largeNextAndPrevButtonsMaxWidthPos:0,
+					showNextAndPrevCoverflowButtons:"yes",
+					nextAndPrevCoverflowButtonsOffsetX:27,
+					showSlideshowButton:"yes",
+					slideshowPreloaderBackgroundColor:"#333333",
+					slideshowpreloaderFillColor:"#E4E4E4",
+					showScrollbar:"yes",
+					showBulletsNavigation:"no",
+					bulletsNormalColor:"#999999",
+					bulletsSelectedColor:"#000000",
+					bulletsNormalRadius:5,
+					bulletsSelectedRadius:8,
+					spaceBetweenBullets:10,
+					bulletsOffset:28,
+					disableScrollbarOnMobile:"yes",
+					enableMouseWheelScroll:"no",
+					scrollbarHandlerWidth:200,
+					scrollbarTextColorNormal:"#E4E4E4",
+					scrollbarTextColorSelected:"#000000",
+					addKeyboardSupport:"yes",
+					
+				});
+			});
+		}
+			
+		</script>
+	</head>
+
+	<body>
+		<!-- div used as a holder for the coverflow -->
+		<div id="coverflowDiv"></div>
+
+		<!-- coverflow data -->
+		<ul id="coverflowData" data-sources="" style="display: none;">
+
+			<!-- category  -->
+			<ul data-cat="+ Category one">
+				
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg" data-thumbnail-width="530" data-thumbnail-height="329"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Responsive, Flexible And Adaptable Layout</p>
+						<p class="fwds3dcov-text">The coverflow has a responsive and adaptable layout compatible with all devices.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Responsive And Adaptable Layout</p>
+						<p class="fwds3dcov-lightbox-paragraph">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg" data-thumbnail-width="530" data-thumbnail-height="329"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Responsive, Flexible And Adaptable Layout</p>
+						<p class="fwds3dcov-text">The coverflow has a responsive and adaptable layout compatible with all devices.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Responsive And Adaptable Layout</p>
+						<p class="fwds3dcov-lightbox-paragraph">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg" data-thumbnail-width="530" data-thumbnail-height="329"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Responsive, Flexible And Adaptable Layout</p>
+						<p class="fwds3dcov-text">The coverflow has a responsive and adaptable layout compatible with all devices.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Responsive And Adaptable Layout</p>
+						<p class="fwds3dcov-lightbox-paragraph">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+					</li>
+				</ul>
+
+
+				
+
+				
+
+			</ul>
+			<!-- end  -->
+
+		</ul>
+		
+	</body>
+</html>
+
+
+
+
