@@ -11,18 +11,18 @@
 		
 		<!-- Setup the coverflow (all settings are explained in detail in the documentation files) -->
 		<script type="text/javascript">
-		FWDRLS3DUtils.onReady(function(){
+			FWDRLS3DUtils.onReady(function(){
 				var coverflow = new FWDSimple3DCoverflow({
 					
 					//required settings
 					coverflowHolderDivId:"coverflowDiv",
-        			coverflowDataListDivId:"coverflowBlock",
-        			displayType:"responsive",
-        			coverflowWidth:5000,
-        			coverflowOffsetHeight:140,
-        			mainFolderPath:"load",
-        			skinPath:"skin_black",
-        			initializeOnlyWhenVisible:"no",
+					coverflowDataListDivId:"coverflowData",
+					displayType:"responsive",
+					coverflowWidth:10000,
+					coverflowOffsetHeight:140,
+					mainFolderPath:"load",
+					skinPath:"skin_black",
+					initializeOnlyWhenVisible:"lazy scrolling",
 												
 					//main settings
 					backgroundColor:"#112530",
@@ -36,11 +36,10 @@
 					coverflowYRotation:30,
 					numberOfThumbnailsToDisplayLeftAndRight:"all",
 					infiniteLoop:"no",
-					rightClickContextMenu:"developer",
 					useDragAndSwipe:"yes",
 					fluidWidthZIndex:1000,
-					preloaderbackgroundColor:"#1d1d1d",
-					preloaderFillColor:"#E4E4E4",
+					preloaderbackgroundColor:"#112530",
+					preloaderFillColor:"#112530",
 					
 					//thumbnails settings
 					useDefaultThumbnailsWidthAndHeight:"no",
@@ -57,7 +56,7 @@
 					thumbnailHoverOffset:0,
 					thumbnailBorderSize:0,
 					thumbnailOffsetY:0,
-					thumbnailBackgroundColor:"#4a4a4a",
+					thumbnailBackgroundColor:"#112530",
 					thumbnailBorderColor1:"#FFFFFF",
 					thumbnailBorderColor2:"#FFFFFF",
 					transparentImages:"no",
@@ -103,10 +102,9 @@
 					scrollbarTextColorNormal:"#E4E4E4",
 					scrollbarTextColorSelected:"#000000",
 					addKeyboardSupport:"yes",
-					
+												
 				});
 			});
-			
 		</script>
 	</head>
 
@@ -121,57 +119,162 @@
 			<ul data-cat="+ Category one">
 				
 				<ul>
-					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg"></li>
-					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg" data-thumbnail-width="530" data-thumbnail-height="329"></li>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf82453b662b03f02197_Emil%20von%20BEHRING%20-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf82453b662b03f02197_Emil%20von%20BEHRING%20-min.jpg" data-thumbnail-width="750" data-thumbnail-height="1080"></li>
 					<li data-thumbnail-text="">
-						<p class="fwds3dcov-header">Responsive, Flexible And Adaptable Layout</p>
-						<p class="fwds3dcov-text">The coverflow has a responsive and adaptable layout compatible with all devices.</p>
+						<p class="fwds3dcov-header">Emil von BEHRING (1854-1917)<br>Prix Nobel 1901</p>
+						<p class="fwds3dcov-text">Premier lauréat du Prix Nobel<br>Il a montré dans la diphtérie et le tétanos l’existence d’un facteur humoral chez les animaux immunisés contre la toxine  produite par ces bactéries et que cette immunité pouvait être transférée et utilisée comme traitement.</p>
 					</li>
 					<li data-info="">
-						<p class="fwds3dcov-lightbox-header">Responsive And Adaptable Layout</p>
-						<p class="fwds3dcov-lightbox-paragraph">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+						<p class="fwds3dcov-lightbox-header">Emil von BEHRING (1854-1917)<br>Prix Nobel 1901</p>
+						<p class="fwds3dcov-lightbox-paragraph">Le fondateur de la bactériologie<br>Il a montré dans la diphtérie et le tétanos l’existence d’un facteur humoral chez les animaux immunisés contre la toxine  produite par ces bactéries et que cette immunité pouvait être transférée et utilisée comme traitement.</p>
 					</li>
 				</ul>
 
 				<ul>
 					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg"></li>
-					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg" data-thumbnail-width="530" data-thumbnail-height="329"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg" data-thumbnail-width="560" data-thumbnail-height="780"></li>
 					<li data-thumbnail-text="">
-						<p class="fwds3dcov-header">Responsive, Flexible And Adaptable Layout</p>
-						<p class="fwds3dcov-text">The coverflow has a responsive and adaptable layout compatible with all devices.</p>
+						<p class="fwds3dcov-header">Robert KOCH  (1843-1910)<br>Prix Nobel 1905</p>
+						<p class="fwds3dcov-text">Le fondateur de la bactériologie<br>Il a découvert le bacille de la tuberculose en 1882 par la technique du bleu de méthylène. Koch et Bordet sont allés en Afrique du Sud combattre la peste bovine. Koch proposait d’injecter de petites quantités de bile d’animaux infectés a</p>
 					</li>
 					<li data-info="">
-						<p class="fwds3dcov-lightbox-header">Responsive And Adaptable Layout</p>
-						<p class="fwds3dcov-lightbox-paragraph">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+						<p class="fwds3dcov-lightbox-header">Robert KOCH  (1843-1910)<br>Prix Nobel 1905</p>
+						<p class="fwds3dcov-lightbox-paragraph">Le fondateur de la bactériologie<br>Il a découvert le bacille de la tuberculose en 1882 par la technique du bleu de méthylène. Koch et Bordet sont allés en Afrique du Sud combattre la peste bovine. Koch proposait d’injecter de petites quantités de bile d’animaux infectés a</p>
 					</li>
 				</ul>
 
 				<ul>
-					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg"></li>
-					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8826e64380bd1514b7_Robert%20KOCH-min.jpg" data-thumbnail-width="530" data-thumbnail-height="329"></li>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8226e643709d15149c_Elie%20METCHNIKOFF%20-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8226e643709d15149c_Elie%20METCHNIKOFF%20-min.jpg" data-thumbnail-width="420" data-thumbnail-height="630"></li>
 					<li data-thumbnail-text="">
-						<p class="fwds3dcov-header">Responsive, Flexible And Adaptable Layout</p>
-						<p class="fwds3dcov-text">The coverflow has a responsive and adaptable layout compatible with all devices.</p>
+						<p class="fwds3dcov-header">Elie METCHNIKOFF (1845-1916)<br>Prix Nobel 1908</p>
+						<p class="fwds3dcov-text">Metchnikoff le père de la phagocytose et du microbiote<br>Recruté par Pasteur, il a travaillé dans son Institut à Paris entouré de plus de 100 collaborateurs. Il a publié plus de 200 articles. Il a accueilli Jules Bordet dans son laboratoire et a été son maître de recherche. Pour Metchnikoff, le pouvoir bactéricide vient des globules blancs. Il s’opposait au concept d’immunité humorale ( anticorps) développé par Paul Ehrlich. Jules Bordet avait pour lui une grande admiration..</p>
 					</li>
 					<li data-info="">
-						<p class="fwds3dcov-lightbox-header">Responsive And Adaptable Layout</p>
-						<p class="fwds3dcov-lightbox-paragraph">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+						<p class="fwds3dcov-lightbox-header">Elie METCHNIKOFF (1845-1916)<br>Prix Nobel 1908</p>
+						<p class="fwds3dcov-lightbox-paragraph">Metchnikoff le père de la phagocytose et du microbiote<br>Recruté par Pasteur, il a travaillé dans son Institut à Paris entouré de plus de 100 collaborateurs. Il a publié plus de 200 articles. Il a accueilli Jules Bordet dans son laboratoire et a été son maître de recherche. Pour Metchnikoff, le pouvoir bactéricide vient des globules blancs. Il s’opposait au concept d’immunité humorale ( anticorps) développé par Paul Ehrlich. Jules Bordet avait pour lui une grande admiration..</p>
 					</li>
 				</ul>
 
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf87c4463c46108c3aa8_Paul%20EHRLICH-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf87c4463c46108c3aa8_Paul%20EHRLICH-min.jpg" data-thumbnail-width="496" data-thumbnail-height="744"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Paul EHRLICH (1854-1917)<br>Prix Nobel 1908</p>
+						<p class="fwds3dcov-text">Le père de la chimiothérapie<br>Ehrlich a montré que les colorants ont une affinité en fonction des tissus et des micro-organismes.Pour lui, à chaque anticorps correspond un type différent de complément et par là, il  s’opposait fortement à Bordet.Considéré comme le père de la chimiothérapie, il proposait comme traitement des composés chimiques par exemple l’arsenic en cas de  syphilis.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Paul EHRLICH (1854-1917)<br>Prix Nobel 1908</p>
+						<p class="fwds3dcov-lightbox-paragraph">Le père de la chimiothérapie<br>Ehrlich a montré que les colorants ont une affinité en fonction des tissus et des micro-organismes.Pour lui, à chaque anticorps correspond un type différent de complément et par là, il  s’opposait fortement à Bordet.Considéré comme le père de la chimiothérapie, il proposait comme traitement des composés chimiques par exemple l’arsenic en cas de  syphilis.</p>
+					</li>
+				</ul>
 
-				
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf85ff56786612378f43_Jules-bordet-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf85ff56786612378f43_Jules-bordet-min.jpg" data-thumbnail-width="500" data-thumbnail-height="550"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Jules BORDET (1870-1961)<br>Prix Nobel 1919</p>
+						<p class="fwds3dcov-text">Jules Bordet, le père de l’immunité humorale<br>Il a décrit le pouvoir bactéricide du sérum, le mécanisme de bactériolyse via l ’Alexine (complément), les anticorps et l’opsonisation (« émulsion »), les similitudes entre hémolyse et bactériolyse (destruction des globules rouges et des bactéries), la sérothérapie (utilisation thérapeutique du sérum de patients immunisés, la coqueluche et son vaccin et le sérodiagnostic, entre autres. </p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Jules BORDET (1870-1961)<br>Prix Nobel 1919</p>
+						<p class="fwds3dcov-lightbox-paragraph">Jules Bordet, le père de l’immunité humorale<br>Il a décrit le pouvoir bactéricide du sérum, le mécanisme de bactériolyse via l ’Alexine (complément), les anticorps et l’opsonisation (« émulsion »), les similitudes entre hémolyse et bactériolyse (destruction des globules rouges et des bactéries), la sérothérapie (utilisation thérapeutique du sérum de patients immunisés, la coqueluche et son vaccin et le sérodiagnostic, entre autres.</p>
+					</li>
+				</ul>
 
-				
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf83d69f734d00e96b85_jules-bordet-microscope-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf83d69f734d00e96b85_jules-bordet-microscope-min.jpg" data-thumbnail-width="700" data-thumbnail-height="400"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Le microscope optique</p>
+						<p class="fwds3dcov-text">Les performances de grossissement de l’image  permettent au  microscope optique d' identifier les bactéries, mais pas les virus. Ce microscope a été utilisé par Jules Bordet pour ses recherches en immuno-bactériologie.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Le microscope optique</p>
+						<p class="fwds3dcov-lightbox-paragraph">Les performances de grossissement de l’image  permettent au  microscope optique d' identifier les bactéries, mais pas les virus. Ce microscope a été utilisé par Jules Bordet pour ses recherches en immuno-bactériologie.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf86d258d7413918953a_Leo%20ERRERA-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf86d258d7413918953a_Leo%20ERRERA-min.jpg" data-thumbnail-width="830" data-thumbnail-height="1360"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Leo ERRERA (1858-1905)</p>
+						<p class="fwds3dcov-text">Le grand botaniste belge<br>Connu pour ses recherches en physiologie végétale, il utilisait des techniques histochimiques sophistiquées pour détecter les alcaloïdes dans les plantes et la présence de glycogène. C’est à partir de ses travaux sur les chémo-attractants  que comme étudiant dans son laboratoire, Jules Bordet a rédigé sa première publication « Adaptation des virus aux organismes vaccinés ».</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Leo ERRERA (1858-1905)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Le grand botaniste belge<br>Connu pour ses recherches en physiologie végétale, il utilisait des techniques histochimiques sophistiquées pour détecter les alcaloïdes dans les plantes et la présence de glycogène. C’est à partir de ses travaux sur les chémo-attractants  que comme étudiant dans son laboratoire, Jules Bordet a rédigé sa première publication « Adaptation des virus aux organismes vaccinés ».</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8790a09778cdbe9abc_Richard%20PFEIFFER-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf8790a09778cdbe9abc_Richard%20PFEIFFER-min.jpg" data-thumbnail-width="760" data-thumbnail-height="1160"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Richard PFEIFFER (1858-1945)</p>
+						<p class="fwds3dcov-text">Le phénomène dit de Pfeiffer<br>Lorsqu’il est chauffé à 56°, le plasma d’animaux immunisés contre le choléra perd sa capacité de détruire les bacilles concernés; ainsi, il a reconnu le rôle important de  l’alexine (appelé plus tard le  complément) qui doit se fixer sur le  complexe antigène anticorps pour détruire l’agent infectieux.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Richard PFEIFFER (1858-1945)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Le phénomène dit de Pfeiffer<br>Lorsqu’il est chauffé à 56°, le plasma d’animaux immunisés contre le choléra perd sa capacité de détruire les bacilles concernés; ainsi, il a reconnu le rôle important de  l’alexine (appelé plus tard le  complément) qui doit se fixer sur le  complexe antigène anticorps pour détruire l’agent infectieux.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf81ed3dac4310c0ac46_Alexandre%20BESREDKA-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf81ed3dac4310c0ac46_Alexandre%20BESREDKA-min.jpg" data-thumbnail-width="980" data-thumbnail-height="1340"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Alexandre BESREDKA (1870-1940)</p>
+						<p class="fwds3dcov-text">Désensibilisation en cas d’allergie<br>Élève de Metchnikoff, il est le premier à avoir montré  qu’en cas d’allergie,  l’on peut désensibiliser  un individu  en lui injectant  de petites doses d’allergènes qu’on répète et  augmente progressivement. Parmi ses autres travaux à l’Institut Pasteur, il a démontré  que le sérum anti-pesteux est capable de neutraliser les toxines de la peste.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Alexandre BESREDKA (1870-1940)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Désensibilisation en cas d’allergie<br>Élève de Metchnikoff, il est le premier à avoir montré  qu’en cas d’allergie,  l’on peut désensibiliser  un individu  en lui injectant  de petites doses d’allergènes qu’on répète et  augmente progressivement. Parmi ses autres travaux à l’Institut Pasteur, il a démontré  que le sérum anti-pesteux est capable de neutraliser les toxines de la peste.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf83531feeeb76f39a08_Emile%20ROUX-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf83531feeeb76f39a08_Emile%20ROUX-min.jpg" data-thumbnail-width="940" data-thumbnail-height="1260"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Emile ROUX (1853-1933)</p>
+						<p class="fwds3dcov-text">Le premier à avoir isolé une toxine<br>Proche collaborateur de Pasteur, il fonda avec lui l’Institut. Il mena avec lui des recherches sur la qui devaient conduire à la mise au point d’un vaccin.Dans son laboratoire, il isola la toxine diphtérique, particulièrement fréquente et mortelle chez l’enfant. Il mit au point le sérum anti-diphtérique, la première efficace contre cette maladie.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Emile ROUX (1853-1933)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Le premier à avoir isolé une toxine<br>Proche collaborateur de Pasteur, il fonda avec lui l’Institut. Il mena avec lui des recherches sur la qui devaient conduire à la mise au point d’un vaccin.Dans son laboratoire, il isola la toxine diphtérique, particulièrement fréquente et mortelle chez l’enfant. Il mit au point le sérum anti-diphtérique, la première efficace contre cette maladie.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf86469dd4aaff45ad65_Octave%20%20GENGOU-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf86469dd4aaff45ad65_Octave%20%20GENGOU-min.jpg" data-thumbnail-width="1170" data-thumbnail-height="750"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Octave  GENGOU (1875-1957)</p>
+						<p class="fwds3dcov-text">Beau-frère de Jules Bordet, Octave Gengou a montré avec lui comment antigène, anticorps et complément interagissent pour détruire les agents infectieux. Ils ont aussi travaillé sur Yersinia Pestis,  le séro diagnostic en bactériologie par fixation du complément et en particulier pour la détection de la coqueluche.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Octave  GENGOU (1875-1957)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Beau-frère de Jules Bordet, Octave Gengou a montré avec lui comment antigène, anticorps et complément interagissent pour détruire les agents infectieux. Ils ont aussi travaillé sur Yersinia Pestis,  le séro diagnostic en bactériologie par fixation du complément et en particulier pour la détection de la coqueluche.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf85e978ee075c26d9c7_jules-bordet-monnaie-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6023bf85e978ee075c26d9c7_jules-bordet-monnaie-min.jpg" data-thumbnail-width="600" data-thumbnail-height="590"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Et si Jules Bordet était encore présent aujourd’hui?</p>
+						<p class="fwds3dcov-text">Réponse de J-M Cavaillon (2020) (Institut Pasteur Paris)<br>«La Belgique aurait été mieux préparée à la survenue de nouvelles pandémies».<br>«Nos pays ont baissé la garde en oubliant le passé et la lutte contre les maladies infectieuses.»<br>«Les médias ont rendu les choses compliquées; ils devraient arrêter le sensationnalisme, contribuer à l’éducation en faveur des vaccins. Il faudrait mieux utiliser les réseaux sociaux.»</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Et si Jules Bordet était encore présent aujourd’hui ?</p>
+						<p class="fwds3dcov-lightbox-paragraph">Réponse de J-M Cavaillon (2020) (Institut Pasteur Paris)<br>« La Belgique aurait été mieux préparée à la survenue de nouvelles pandémies ».<br>« Nos pays ont baissé la garde en oubliant le passé et la lutte contre les maladies infectieuses. »<br>« Les médias ont rendu les choses compliquées; ils devraient arrêter le sensationnalisme, contribuer à l’éducation en faveur des vaccins. Il faudrait mieux utiliser les réseaux sociaux. »</p>
+					</li>
+				</ul>
 
 			</ul>
-			<!-- end  -->
-
-		</ul>
 		
 	</body>
 </html>
-
-
-
-
