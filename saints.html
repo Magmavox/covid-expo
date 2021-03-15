@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple 3D Coverflow</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<!-- Imports required for the css and js files -->
+		<link rel="stylesheet" type="text/css" href="load/global.css"/>
+		<script type="text/javascript" src="FWDSimple3DCoverflow.js"></script>
+		
+		<!-- Setup the coverflow (all settings are explained in detail in the documentation files) -->
+		<script type="text/javascript">
+			FWDRLS3DUtils.onReady(function(){
+				var coverflow = new FWDSimple3DCoverflow({
+					//required settings
+					coverflowHolderDivId:"coverflowDiv",
+					coverflowDataListDivId:"coverflowData",
+					displayType:"responsive",
+					coverflowWidth:10000,
+					coverflowHeight: 1150,
+					coverflowOffsetHeight: 0,
+					mainFolderPath:"load",
+					skinPath:"skin_black",
+					initializeOnlyWhenVisible:"lazy scrolling",
+												
+					//main settings
+					backgroundColor:"#092c38",
+					backgroundImagePath:"",
+					backgroundSize:"auto",
+					backgroundPosition:"center",
+					backgroundRepeat:"repeat",
+					coverflowStartPosition:"left",
+					coverflowTopology:"flipping",
+					coverflowXRotation:0,
+					coverflowYRotation:30,
+					numberOfThumbnailsToDisplayLeftAndRight:"all",
+					infiniteLoop:"no",
+					useDragAndSwipe:"yes",
+					fluidWidthZIndex:1000,
+					preloaderbackgroundColor:"#092c38",
+					preloaderFillColor:"#092c38",
+					
+					//thumbnails settings
+					useDefaultThumbnailsWidthAndHeight:"no",
+					thumbnailWidth:500,
+					thumbnailHeight:329,
+					thumbnailMaxHeight:500,
+					thumbnailResizeOffest:100,
+					textMaxWidth: 1000,
+					thumbnailXOffset3D:86,
+					thumbnailXSpace3D:78,
+					thumbnailZOffset3D:200,
+					thumbnailZSpace3D:93,
+					thumbnailYAngle3D:70,
+					thumbnailHoverOffset:0,
+					thumbnailBorderSize:0,
+					thumbnailOffsetY:0,
+					thumbnailBackgroundColor:"#092c38",
+					thumbnailBorderColor1:"#092c38",
+					thumbnailBorderColor2:"#092c38",
+					transparentImages:"no",
+					thumbnailsAlignment:"bottom",
+					maxNumberOfThumbnailsOnMobile:20,
+					showThumbnailsGradient:"no",
+					thumbnailGradientColor1:"rgba(29, 29, 29, 0)",
+					thumbnailGradientColor2:"rgba(29, 29, 29, 1)",
+					showText:"yes",
+					textOffset: 0,
+					showThumbnailBoxShadow:"yes",
+					thumbnailBoxShadowCss:"0px 2px 2px #1d1d1d",
+					reflectionHeight:50,
+					reflectionDistance:0,
+					reflectionOpacity:.2,
+										
+					//controls settings
+					slideshowDelay:5000,
+					autoplay:"no",
+					disableNextAndPrevButtonsOnMobile:"no",
+					controlsMaxWidth:530,
+					controlsPosition:"bottom",
+					controlsOffset: 10,
+					showLargeNextAndPrevCoverflowButtons:"no",
+					largeNextAndPrevButtonsOffest:20,
+					largeNextAndPrevButtonsMaxWidthPos:0,
+					showNextAndPrevCoverflowButtons:"yes",
+					nextAndPrevCoverflowButtonsOffsetX:27,
+					showSlideshowButton:"no",
+					slideshowPreloaderBackgroundColor:"#092c38",
+					slideshowpreloaderFillColor:"#092c38",
+					showScrollbar:"yes",
+					showBulletsNavigation:"no",
+					bulletsNormalColor:"#092c38",
+					bulletsSelectedColor:"#000000",
+					bulletsNormalRadius:5,
+					bulletsSelectedRadius:8,
+					spaceBetweenBullets:10,
+					bulletsOffset:28,
+					disableScrollbarOnMobile:"yes",
+					enableMouseWheelScroll:"no",
+					scrollbarHandlerWidth:200,
+					scrollbarTextColorNormal:"#E4E4E4",
+					scrollbarTextColorSelected:"#000000",
+					addKeyboardSupport:"yes",						
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- div used as a holder for the coverflow -->
+		<div id="coverflowDiv"></div>
+
+		<!-- coverflow data -->
+		<ul id="coverflowData" data-sources="" style="display: none;">
+
+			<!-- category  -->
+			<ul data-cat="+ Category one">
+				
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f7197e31615a2411928fe_chatiment-divin-peste-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f7197e31615a2411928fe_chatiment-divin-peste-min.jpg" data-thumbnail-width="512" data-thumbnail-height="316"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Les saints protecteurs</p>
+						<p class="fwds3dcov-text">Puisque la peste était avant tout une punition céleste, pour apaiser le divin, les villes et les villages organisaient des manifestations de piété, première démarche pour tenter d'empêcher l'épidémie. Puis, quand le mal se propageait, on priait la Vierge, les saints patrons des paroisses et les saints guérisseurs, afin qu'ils mettent fin au fléau. </p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Les saints protecteurs</p>
+						<p class="fwds3dcov-lightbox-paragraph">Puisque la peste était avant tout une punition céleste, pour apaiser le divin, les villes et les villages organisaient des manifestations de piété, première démarche pour tenter d'empêcher l'épidémie. Puis, quand le mal se propageait, on priait la Vierge, les saints patrons des paroisses et les saints guérisseurs, afin qu'ils mettent fin au fléau. </p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f719936b9c3277e8382d0_saint-francois-de-paule-peste-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f719936b9c3277e8382d0_saint-francois-de-paule-peste-min.jpg" data-thumbnail-width="468" data-thumbnail-height="340"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Saint-François de Paule</p>
+						<p class="fwds3dcov-text">Le roi Louis XI agenouillé devant St François de Paule<br>pour avoir guéri Bormes et Fréjus de la peste<br>Le vieil homme au visage buriné et à la barbe en broussaille s’avançait, appuyé sur son bâton de pèlerin, vers le village de Bormes. Recouvert d’un capuchon, il portait une robe de bure et des sandales. Trois compagnons marchaient à ses côtés. On voyait s’éloigner quatre silhouettes, comme des fantômes errants, dans la campagne déserte où étaient allumés des feux…<br>« Mes frères, la peste va quitter ces lieux », annonça Saint François de Paule. Là encore, au bout de trois jours, les guérisons apparurent.<br>François logeait dans la maison du chapitre. Son œuvre accomplie, il quitta la ville.
+						</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Saint-François de Paule</p>
+						<p class="fwds3dcov-lightbox-paragraph">Le roi Louis XI agenouillé devant St François de Paule<br>pour avoir guéri Bormes et Fréjus de la peste<br>Le vieil homme au visage buriné et à la barbe en broussaille s’avançait, appuyé sur son bâton de pèlerin, vers le village de Bormes. Recouvert d’un capuchon, il portait une robe de bure et des sandales. Trois compagnons marchaient à ses côtés. On voyait s’éloigner quatre silhouettes, comme des fantômes errants, dans la campagne déserte où étaient allumés des feux…<br>« Mes frères, la peste va quitter ces lieux », annonça Saint François de Paule. Là encore, au bout de trois jours, les guérisons apparurent.<br>François logeait dans la maison du chapitre. Son œuvre accomplie, il quitta la ville.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f7199b2f79ba497453207_saint-roch-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f7199b2f79ba497453207_saint-roch-min.jpg" data-thumbnail-width="700" data-thumbnail-height="310"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Saint Roch</p>
+						<p class="fwds3dcov-text">Né à Montpellier, Saint Roch, parti en pèlerinage à Rome, y contracte la peste. Isolé dans une montagne,  il  est sauvé par le chien du Seigneur Gothard qui lui apporte un pain chaque jour.<br>Après avoir été guéri miraculeusement de la peste, il en devient le saint protecteur et guérisseur. Les pestiférés étaient regroupés dans des lazarets particuliers ou au sein des églises, où comme ici, Saint Roch soignait les  malades sous le regard ébahi de ses condisciples présentant à leur tour leurs bubons.<br>Le clair-obscur choisi par l’artiste participe aux effets dramatiques de la scène. 
+						</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Saint Roch</p>
+						<p class="fwds3dcov-lightbox-paragraph">Né à Montpellier, Saint Roch, parti en pèlerinage à Rome, y contracte la peste. Isolé dans une montagne,  il  est sauvé par le chien du Seigneur Gothard qui lui apporte un pain chaque jour.<br>Après avoir été guéri miraculeusement de la peste, il en devient le saint protecteur et guérisseur. Les pestiférés étaient regroupés dans des lazarets particuliers ou au sein des églises, où comme ici, Saint Roch soignait les  malades sous le regard ébahi de ses condisciples présentant à leur tour leurs bubons.<br>Le clair-obscur choisi par l’artiste participe aux effets dramatiques de la scène. </p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f719bb2f79b40d2453213_saint-sebastien-peste-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f719bb2f79b40d2453213_saint-sebastien-peste-min.jpg" data-thumbnail-width="800" data-thumbnail-height="1190"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Saint-Sébastien</p>
+						<p class="fwds3dcov-text">Il était  considéré comme protecteur de la peste. Criblé de flèches, en référence à son martyre, il implore Dieu de cesser les ravages se déroulant sous ses yeux. On distingue aussi un fossoyeur frappé par la peste alors qu’il enterre les victimes. ( Peste de Justinien)<br>Josse Lieferinxe, Saint Sébastien intercédant pour les pestiférés (1497-1499), Baltimore, Walters Art Museum.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Saint-Sébastien</p>
+						<p class="fwds3dcov-lightbox-paragraph">Il était  considéré comme protecteur de la peste. Criblé de flèches, en référence à son martyre, il implore Dieu de cesser les ravages se déroulant sous ses yeux. On distingue aussi un fossoyeur frappé par la peste alors qu’il enterre les victimes. ( Peste de Justinien)<br>Josse Lieferinxe, Saint Sébastien intercédant pour les pestiférés (1497-1499), Baltimore, Walters Art Museum.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f719a7c13a63b4fbe28c5_saints-come-damien-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f719a7c13a63b4fbe28c5_saints-come-damien-min.jpg" data-thumbnail-width="660" data-thumbnail-height="450"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Cosme et Damien</p>
+						<p class="fwds3dcov-text">Le corps médical, mis en danger, implorait ses saints patrons : Cosme et Damien, deux frères qui soignaient les pestiférés ( sans être rémunérés)…..</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Cosme et Damien</p>
+						<p class="fwds3dcov-lightbox-paragraph">Le corps médical, mis en danger, implorait ses saints patrons : Cosme et Damien, deux frères qui soignaient les pestiférés ( sans être rémunérés)…..</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f71984fd6783e70692a1a_alexiens-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/604f71984fd6783e70692a1a_alexiens-min.jpg" data-thumbnail-width="310" data-thumbnail-height="550"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Les Alexiens à Bruxelles</p>
+						<p class="fwds3dcov-text">Lors de l’épidémie de peste qui toucha Bruxelles de 1667 à 1669, plusieurs branches de religieux étaient préposées à la gestion de la pandémie. Les Alexiens s’occupaient du transport et de l’ensevelissement des pestiférés. Plus tard, ils créèrent des hospices pour y soigner les pestiférés, les indigents et les aliénés légers. Auprès d’eux, les Sœurs Noires prodiguaient des soins aux malades, alors que les Frères Récollets les réconfortaient des derniers sacrements. (Le Centre hospitalier César de Paepe est situé rue des Alexiens, le Couvent des Récollets près de la Bourse).</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Les Alexiens à Bruxelles</p>
+						<p class="fwds3dcov-lightbox-paragraph">Lors de l’épidémie de peste qui toucha Bruxelles de 1667 à 1669, plusieurs branches de religieux étaient préposées à la gestion de la pandémie. Les Alexiens s’occupaient du transport et de l’ensevelissement des pestiférés. Plus tard, ils créèrent des hospices pour y soigner les pestiférés, les indigents et les aliénés légers. Auprès d’eux, les Sœurs Noires prodiguaient des soins aux malades, alors que les Frères Récollets les réconfortaient des derniers sacrements. (Le Centre hospitalier César de Paepe est situé rue des Alexiens, le Couvent des Récollets près de la Bourse).</p>
+					</li>
+				</ul>
+			</ul>
+		
+	</body>
+</html>
