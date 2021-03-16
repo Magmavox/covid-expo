@@ -1,6 +1,11 @@
 /* Import font. */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
+/* coverflow-wrapper */
+.coverflow-div {
+	margin-top: -12vh;
+}
+
 /* Main background. */
 .fwds3dcov-main-background{}
 
