@@ -3,13 +3,7 @@
 
 /* coverflow-wrapper */
 .coverflow-div {
-	margin-top: -11vh;
-}
-
-@media only screen and (min-width: 1920px) {
-	.coverflow-div {
-		margin-top: -13vh;
-	}
+	margin-top: -10vh;
 }
 
 /* Main background. */
