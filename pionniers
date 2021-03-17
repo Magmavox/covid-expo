@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple 3D Coverflow</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<!-- Imports required for the css and js files -->
+		<link rel="stylesheet" type="text/css" href="load/global.css"/>
+		<script type="text/javascript" src="FWDSimple3DCoverflow.js"></script>
+		
+		<!-- Setup the coverflow (all settings are explained in detail in the documentation files) -->
+		<script type="text/javascript">
+			FWDRLS3DUtils.onReady(function(){
+				var coverflow = new FWDSimple3DCoverflow({
+					//required settings
+					coverflowHolderDivId:"coverflowDiv",
+					coverflowDataListDivId:"coverflowData",
+					displayType:"responsive",
+					coverflowWidth:20000,
+					coverflowHeight: 900,
+					coverflowOffsetHeight: 0,
+					mainFolderPath:"load",
+					skinPath:"skin_black",
+					initializeOnlyWhenVisible:"lazy scrolling",
+												
+					//main settings
+					backgroundColor:"#092c38",
+					backgroundImagePath:"",
+					backgroundSize:"auto",
+					backgroundPosition:"center",
+					backgroundRepeat:"repeat",
+					coverflowStartPosition:"left",
+					coverflowTopology:"flipping",
+					coverflowXRotation:0,
+					coverflowYRotation:30,
+					numberOfThumbnailsToDisplayLeftAndRight:"all",
+					infiniteLoop:"no",
+					useDragAndSwipe:"yes",
+					fluidWidthZIndex:1000,
+					preloaderbackgroundColor:"#092c38",
+					preloaderFillColor:"#092c38",
+					
+					//thumbnails settings
+					useDefaultThumbnailsWidthAndHeight:"no",
+					thumbnailWidth:500,
+					thumbnailHeight:329,
+					thumbnailMaxHeight:500,
+					thumbnailResizeOffest:100,
+					textMaxWidth: 2000,
+					thumbnailXOffset3D:86,
+					thumbnailXSpace3D:78,
+					thumbnailZOffset3D:200,
+					thumbnailZSpace3D:93,
+					thumbnailYAngle3D:70,
+					thumbnailHoverOffset:0,
+					thumbnailBorderSize:0,
+					thumbnailOffsetY:0,
+					thumbnailBackgroundColor:"#092c38",
+					thumbnailBorderColor1:"#092c38",
+					thumbnailBorderColor2:"#092c38",
+					transparentImages:"no",
+					thumbnailsAlignment:"bottom",
+					maxNumberOfThumbnailsOnMobile:20,
+					showThumbnailsGradient:"no",
+					thumbnailGradientColor1:"rgba(29, 29, 29, 0)",
+					thumbnailGradientColor2:"rgba(29, 29, 29, 1)",
+					showText:"yes",
+					textOffset: 0,
+					showThumbnailBoxShadow:"yes",
+					thumbnailBoxShadowCss:"0px 2px 2px #1d1d1d",
+					reflectionHeight:50,
+					reflectionDistance:0,
+					reflectionOpacity:.2,
+										
+					//controls settings
+					slideshowDelay:5000,
+					autoplay:"no",
+					disableNextAndPrevButtonsOnMobile:"no",
+					controlsMaxWidth:530,
+					controlsPosition:"bottom",
+					controlsOffset: 10,
+					showLargeNextAndPrevCoverflowButtons:"no",
+					largeNextAndPrevButtonsOffest:20,
+					largeNextAndPrevButtonsMaxWidthPos:0,
+					showNextAndPrevCoverflowButtons:"yes",
+					nextAndPrevCoverflowButtonsOffsetX:27,
+					showSlideshowButton:"no",
+					slideshowPreloaderBackgroundColor:"#092c38",
+					slideshowpreloaderFillColor:"#092c38",
+					showScrollbar:"yes",
+					showBulletsNavigation:"no",
+					bulletsNormalColor:"#092c38",
+					bulletsSelectedColor:"#000000",
+					bulletsNormalRadius:5,
+					bulletsSelectedRadius:8,
+					spaceBetweenBullets:10,
+					bulletsOffset:28,
+					disableScrollbarOnMobile:"yes",
+					enableMouseWheelScroll:"no",
+					scrollbarHandlerWidth:200,
+					scrollbarTextColorNormal:"#E4E4E4",
+					scrollbarTextColorSelected:"#000000",
+					addKeyboardSupport:"yes",						
+				});
+			});
+		</script>
+	</head>
 
+	<body>
+		<!-- div used as a holder for the coverflow -->
+		<div id="coverflowDiv" class="coverflow-div"></div>
+
+		<!-- coverflow data -->
+		<ul id="coverflowData" data-sources="" style="display: none;">
+
+			<!-- category  -->
+			<ul data-cat="+ Category one">
+				
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d3547c22b4ed4ffd39a5_gui-de-chauliac-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d3547c22b4ed4ffd39a5_gui-de-chauliac-min.jpg" data-thumbnail-width="512" data-thumbnail-height="316"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Gui  De Chauliac (1298-1368 )</p>
+						<p class="fwds3dcov-text">Chirurgien du Pape Clément VI,  Gui de Chauliac  a choisi de rester en Avignon et de soigner les malades de la peste malgré l’hécatombe de l’épidémie en 1348 , deux mois après Marseille et Gènes. Il s’était nourri des enseignements de Galien et d’Avicenne. Il a détaillé  toutes les étapes ; la peste bubonique avec fièvre, crachements de sang … dont on meurt en 3 jours et l’autre  forme caractérisée par de la fièvre, des abcès, du charbon aux aisselles et aux aisnes et mortelle en 5 jours. Les médiévaux reconnaissaient les deux formes de peste, bubonique et pulmonaire par contagion . Gui  de Chauliac  attribuait la cause à une contamination des airs, leur  corruption par l’orientation des vents,  et des eaux, mais niait la transmission d’homme à homme. Il avait remarqué que la peste bubonique est transmise par la piqure de la puce du rat  et  la peste pulmonaire  par la salive. Comme traitement, il proposait l’application de décoctions d’oignons sur les plaies. Lui-même en aurait été atteint mais il en aurait guéri.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Gui  De Chauliac (1298-1368 )</p>
+						<p class="fwds3dcov-lightbox-paragraph">Chirurgien du Pape Clément VI,  Gui de Chauliac  a choisi de rester en Avignon et de soigner les malades de la peste malgré l’hécatombe de l’épidémie en 1348 , deux mois après Marseille et Gènes. Il s’était nourri des enseignements de Galien et d’Avicenne. Il a détaillé  toutes les étapes ; la peste bubonique avec fièvre, crachements de sang … dont on meurt en 3 jours et l’autre  forme caractérisée par de la fièvre, des abcès, du charbon aux aisselles et aux aisnes et mortelle en 5 jours. Les médiévaux reconnaissaient les deux formes de peste, bubonique et pulmonaire par contagion . Gui  de Chauliac  attribuait la cause à une contamination des airs, leur  corruption par l’orientation des vents,  et des eaux, mais niait la transmission d’homme à homme. Il avait remarqué que la peste bubonique est transmise par la piqure de la puce du rat  et  la peste pulmonaire  par la salive. Comme traitement, il proposait l’application de décoctions d’oignons sur les plaies. Lui-même en aurait été atteint mais il en aurait guéri.</p>
+					</li>
+				</ul>	
+						
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d354b106f374e2f9a3ec_fracastor-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d354b106f374e2f9a3ec_fracastor-min.jpg" data-thumbnail-width="512" data-thumbnail-height="316"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Titian Girolamo Fracastoro (1478-1553)</p>
+						<p class="fwds3dcov-text">Frascator fut le premier à soutenir la thèse de la contagion par des parasites microscopiques. Médecin, philosophe, il est célèbre par sa théorie  (purement intuitive)  sur la propagation des maladies infectieuses. Pour lui, la transmission se fait via des organismes vivants  qui sont petits et  invisibles à l’œil nu et qu’il appelle « seminaria contagionis. » La maladie survient par contact entre individu malade et individu sain , ou alors avec l’air ou des objets comme support. Parfois les seminaria contigionis sont attirés par les humeurs de certains individus expliquant ainsi pourquoi certaines familles sont plus sujettes que d’autres. Cette vision allait à l’encontre de la théorie de la génération spontanée de la médecine hippocratique. Néanmoins, il recommandait de vivre dans des maisons propres et aérées et pas trop chaudes pour que les pores de la peau ne s’ouvrent pas trop.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Titian Girolamo Fracastoro (1478-1553)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Frascator fut le premier à soutenir la thèse de la contagion par des parasites microscopiques. Médecin, philosophe, il est célèbre par sa théorie  (purement intuitive)  sur la propagation des maladies infectieuses. Pour lui, la transmission se fait via des organismes vivants  qui sont petits et  invisibles à l’œil nu et qu’il appelle « seminaria contagionis. » La maladie survient par contact entre individu malade et individu sain , ou alors avec l’air ou des objets comme support. Parfois les seminaria contigionis sont attirés par les humeurs de certains individus expliquant ainsi pourquoi certaines familles sont plus sujettes que d’autres. Cette vision allait à l’encontre de la théorie de la génération spontanée de la médecine hippocratique. Néanmoins, il recommandait de vivre dans des maisons propres et aérées et pas trop chaudes pour que les pores de la peau ne s’ouvrent pas trop.</p>
+					</li>
+				</ul>	
+						
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d3520d2ed3beb66021d6_paracelse-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d3520d2ed3beb66021d6_paracelse-min.jpg" data-thumbnail-width="512" data-thumbnail-height="316"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Paracelse ( 1493-1541)</p>
+						<p class="fwds3dcov-text">Lors de la peste au tyrol 1534: « Si Dieu ne m’aide pas, que m’aide le Diable » criait-il. Diplômé chirurgien militaire à Venise en 1516, il était à la fois empirique, superstitieux, alchimiste, astrologue… 
+							Il soignait les pesteux, par de l’opium, du mercure, du soufre, de l’antimoine. 
+							Pour lui, tout homme est un composé chimique et doit être traité comme tel et aux 4 éléments d’Aristote, s’ajoutent les 3 principes : le sel (goût et solidité), le soufre (consistance huileuse et caractère inflammable) et le mercure ( sprit volatile. 
+							La maladie survient lorsque les déchets sont retenus et que se forment des calculs. 
+							Il propose de soigner le semblable par le semblable (le poison dans le corps doit être soigné par du poison), plutôt que par des mélanges de plantes. 
+							Il prône aussi l’usage de minéraux et de produits de distillation. Il ajoute que la connaissance des cieux renseigne sur l’homme et l’inverse est vrai aussi. 
+							</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Paracelse ( 1493-1541)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Lors de la peste au tyrol 1534: « Si Dieu ne m’aide pas, que m’aide le Diable » criait-il. Diplômé chirurgien militaire à Venise en 1516, il était à la fois empirique, superstitieux, alchimiste, astrologue… 
+							Il soignait les pesteux, par de l’opium, du mercure, du soufre, de l’antimoine. 
+							Pour lui, tout homme est un composé chimique et doit être traité comme tel et aux 4 éléments d’Aristote, s’ajoutent les 3 principes : le sel (goût et solidité), le soufre (consistance huileuse et caractère inflammable) et le mercure ( sprit volatile. 
+							La maladie survient lorsque les déchets sont retenus et que se forment des calculs. 
+							Il propose de soigner le semblable par le semblable (le poison dans le corps doit être soigné par du poison), plutôt que par des mélanges de plantes. 
+							Il prône aussi l’usage de minéraux et de produits de distillation. Il ajoute que la connaissance des cieux renseigne sur l’homme et l’inverse est vrai aussi. 
+							</p>
+					</li>
+				</ul>	
+						
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d35590b70ad66f69f1f2_nostradamus-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d35590b70ad66f69f1f2_nostradamus-min.jpg" data-thumbnail-width="512" data-thumbnail-height="316"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Nostradamus (1503-1566)</p>
+						<p class="fwds3dcov-text">En 1546, la ville d’Aix en Provence  connue pour son manque d’hygiène, est frappée par une épidémie de peste. Nostradamus sur place  en décrit le tableau clinique  avec ses taches noires sur le corps (« le charbon provençal. ») Il conseille d'éliminer les cadavres infectés, de ventiler les maisons, de boire de l'eau propre et potable ou du jus de cynorrhodon. Par contre,  il s’oppose à la saignée</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Nostradamus (1503-1566) </p>
+						<p class="fwds3dcov-lightbox-paragraph">En 1546, la ville d’Aix en Provence  connue pour son manque d’hygiène, est frappée par une épidémie de peste. Nostradamus sur place  en décrit le tableau clinique  avec ses taches noires sur le corps (« le charbon provençal. ») Il conseille d'éliminer les cadavres infectés, de ventiler les maisons, de boire de l'eau propre et potable ou du jus de cynorrhodon. Par contre,  il s’oppose à la saignée</p>
+					</li>
+				</ul>	
+						
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d3539be643aefead3e96_ambroise-pare%CC%81-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d3539be643aefead3e96_ambroise-pare%CC%81-min.jpg" data-thumbnail-width="512" data-thumbnail-height="316"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Ambroise Paré (1510-1590) </p>
+						<p class="fwds3dcov-text">Ambroise Paré fut victime de la peste alors qu’il était en stage à l’Hôtel Dieu, mais il parvint à s’en remettre. Il a combattu l’épidémie de peste à Lyon en 1564 et rédigé un Traité de la peste et de la petite vérole et rougeole avec une description précise : fièvre, bubons, charbons, pourpre, flux de ventre, délire, frénésie, douleurs d’estomac, palpitation de coeur, pesanteur et lassitude de tous les membres, sommeil profond et sens tout hébétés, inquiétude, difficulté de respirer, vomissements fréquents, flux de sang par le nez et autres parties du corps, appétit perdu, langue sèche, noire et aride, regard hideux, face pale… tremblement universel, puanteur des excréments…. 
+							Pour lui, le mal vient de l’ire de Dieu. Dans son discours sur la peste en 1582, il cite l’Ancien Testament lorsque le Seigneur dit : « je ferai venir sur vous le glaive vindicateur pour la vengeance de mon alliance, je vous enverrai la pestilence » (Lévitique 26)….. et dans le Deutéronome ch 28 : Le Seigneur des armées dit « J’envoie sur vous l’épée, la famine, et la peste… » mais sont également responsables « les étoiles courantes et comètes de diverses figures ». 
+							</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Ambroise Paré (1510-1590) </p>
+						<p class="fwds3dcov-lightbox-paragraph">Ambroise Paré fut victime de la peste alors qu’il était en stage à l’Hôtel Dieu, mais il parvint à s’en remettre. Il a combattu l’épidémie de peste à Lyon en 1564 et rédigé un Traité de la peste et de la petite vérole et rougeole avec une description précise : fièvre, bubons, charbons, pourpre, flux de ventre, délire, frénésie, douleurs d’estomac, palpitation de coeur, pesanteur et lassitude de tous les membres, sommeil profond et sens tout hébétés, inquiétude, difficulté de respirer, vomissements fréquents, flux de sang par le nez et autres parties du corps, appétit perdu, langue sèche, noire et aride, regard hideux, face pale… tremblement universel, puanteur des excréments…. 
+							Pour lui, le mal vient de l’ire de Dieu. Dans son discours sur la peste en 1582, il cite l’Ancien Testament lorsque le Seigneur dit : « je ferai venir sur vous le glaive vindicateur pour la vengeance de mon alliance, je vous enverrai la pestilence » (Lévitique 26)….. et dans le Deutéronome ch 28 : Le Seigneur des armées dit « J’envoie sur vous l’épée, la famine, et la peste… » mais sont également responsables « les étoiles courantes et comètes de diverses figures ». 
+							</p>
+					</li>
+				</ul>	
+	</body>
+</html>
