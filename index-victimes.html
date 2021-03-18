@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple 3D Coverflow</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<!-- Imports required for the css and js files -->
+		<link rel="stylesheet" type="text/css" href="load/global.css"/>
+		<script type="text/javascript" src="FWDSimple3DCoverflow.js"></script>
+        <style>
+			.fwds3dcov-text{
+				font: 400 2.2vh Roboto !important;
+				line-height: 1.4em !important;
+			}
+		</style>
+		<!-- Setup the coverflow (all settings are explained in detail in the documentation files) -->
+		<script type="text/javascript">
+			FWDRLS3DUtils.onReady(function(){
+				var coverflow = new FWDSimple3DCoverflow({
+					//required settings
+					coverflowHolderDivId:"coverflowDiv",
+					coverflowDataListDivId:"coverflowData",
+					displayType:"responsive",
+					coverflowWidth:20000,
+					coverflowHeight: 200,
+					coverflowOffsetHeight: 0,
+					mainFolderPath:"load",
+					skinPath:"skin_black",
+					initializeOnlyWhenVisible:"lazy scrolling",
+												
+					//main settings
+					backgroundColor:"#092c38",
+					backgroundImagePath:"",
+					backgroundSize:"auto",
+					backgroundPosition:"center",
+					backgroundRepeat:"repeat",
+					coverflowStartPosition:"left",
+					coverflowTopology:"flipping",
+					coverflowXRotation:0,
+					coverflowYRotation:30,
+					numberOfThumbnailsToDisplayLeftAndRight:"all",
+					infiniteLoop:"no",
+					useDragAndSwipe:"yes",
+					fluidWidthZIndex:1000,
+					preloaderbackgroundColor:"#092c38",
+					preloaderFillColor:"#092c38",
+					
+					//thumbnails settings
+					useDefaultThumbnailsWidthAndHeight:"no",
+					thumbnailWidth:500,
+					thumbnailHeight:329,
+					thumbnailMaxHeight:500,
+					thumbnailResizeOffest:100,
+					textMaxWidth: 2000,
+					thumbnailXOffset3D:86,
+					thumbnailXSpace3D:78,
+					thumbnailZOffset3D:200,
+					thumbnailZSpace3D:93,
+					thumbnailYAngle3D:70,
+					thumbnailHoverOffset:0,
+					thumbnailBorderSize:0,
+					thumbnailOffsetY:0,
+					thumbnailBackgroundColor:"#092c38",
+					thumbnailBorderColor1:"#092c38",
+					thumbnailBorderColor2:"#092c38",
+					transparentImages:"no",
+					thumbnailsAlignment:"bottom",
+					maxNumberOfThumbnailsOnMobile:20,
+					showThumbnailsGradient:"no",
+					thumbnailGradientColor1:"rgba(29, 29, 29, 0)",
+					thumbnailGradientColor2:"rgba(29, 29, 29, 1)",
+					showText:"yes",
+					textOffset: 0,
+					showThumbnailBoxShadow:"yes",
+					thumbnailBoxShadowCss:"0px 2px 2px #1d1d1d",
+					reflectionHeight:50,
+					reflectionDistance:0,
+					reflectionOpacity:.2,
+										
+					//controls settings
+					slideshowDelay:5000,
+					autoplay:"no",
+					disableNextAndPrevButtonsOnMobile:"no",
+					controlsMaxWidth:530,
+					controlsPosition:"bottom",
+					controlsOffset: 10,
+					showLargeNextAndPrevCoverflowButtons:"no",
+					largeNextAndPrevButtonsOffest:20,
+					largeNextAndPrevButtonsMaxWidthPos:0,
+					showNextAndPrevCoverflowButtons:"yes",
+					nextAndPrevCoverflowButtonsOffsetX:27,
+					showSlideshowButton:"no",
+					slideshowPreloaderBackgroundColor:"#092c38",
+					slideshowpreloaderFillColor:"#092c38",
+					showScrollbar:"yes",
+					showBulletsNavigation:"no",
+					bulletsNormalColor:"#092c38",
+					bulletsSelectedColor:"#000000",
+					bulletsNormalRadius:5,
+					bulletsSelectedRadius:8,
+					spaceBetweenBullets:10,
+					bulletsOffset:28,
+					disableScrollbarOnMobile:"yes",
+					enableMouseWheelScroll:"no",
+					scrollbarHandlerWidth:200,
+					scrollbarTextColorNormal:"#E4E4E4",
+					scrollbarTextColorSelected:"#000000",
+					addKeyboardSupport:"yes",						
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- div used as a holder for the coverflow -->
+		<div id="coverflowDiv" class="coverflow-div"></div>
+
+		<!-- coverflow data -->
+		<ul id="coverflowData" data-sources="" style="display: none;">
+
+			<!-- category  -->
+			<ul data-cat="+ Category one">
+				
+				<ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d3547c22b4ed4ffd39a5_gui-de-chauliac-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/6051d3547c22b4ed4ffd39a5_gui-de-chauliac-min.jpg" data-thumbnail-width="660" data-thumbnail-height="316"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Périclès (493-429 avant JC)</p>
+						<p class="fwds3dcov-text">Périclès a été souverain d'Athènes pendant plus de 30 ans et connu pour ses grandes compétences oratoires et sa minutieuse honnêteté. Il était un partisan des arts et des universitaires et a personnellement supervisé la construction du Parthénon. La période pendant laquelle il dirigea Athènes, à peu près de 461 à 429 avant JC, est parfois connue sous le nom de «l'âge de Périclès». Périclès est considéré comme responsable de la guerre avec Sparte qui conduirait finalement à la chute d'Athènes. Au milieu de la guerre, les Athéniens ont été dévastés par la  peste qui emporte Périclès à l'âge de 65 ans.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Périclès (493-429 avant JC)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Périclès a été souverain d'Athènes pendant plus de 30 ans et connu pour ses grandes compétences oratoires et sa minutieuse honnêteté. Il était un partisan des arts et des universitaires et a personnellement supervisé la construction du Parthénon. La période pendant laquelle il dirigea Athènes, à peu près de 461 à 429 avant JC, est parfois connue sous le nom de «l'âge de Périclès». Périclès est considéré comme responsable de la guerre avec Sparte qui conduirait finalement à la chute d'Athènes. Au milieu de la guerre, les Athéniens ont été dévastés par la  peste qui emporte Périclès à l'âge de 65 ans.</p>
+					</li>
+				</ul>
+
+                <ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d25234cc85ba5866244_Pape-PelagiusII-peste-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d25234cc85ba5866244_Pape-PelagiusII-peste-min.jpg" data-thumbnail-width="380" data-thumbnail-height="400"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Pape Pélage II (520-579)</p>
+						<p class="fwds3dcov-text">Fils du Goth Unigild, Pélage II est né à Rome en 520. Il est élu pape en août 579, à l’apogée du siège des Lombards sur Rome en Italie, et sera consacré le 26 novembre de la même année. Il meurt le 5 février 590 de la peste qui frappe Rome à la suite des inondations majeures du Tibre de l’hiver 589-590.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Pape Pélage II (520-579)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Fils du Goth Unigild, Pélage II est né à Rome en 520. Il est élu pape en août 579, à l’apogée du siège des Lombards sur Rome en Italie, et sera consacré le 26 novembre de la même année. Il meurt le 5 février 590 de la peste qui frappe Rome à la suite des inondations majeures du Tibre de l’hiver 589-590.</p>
+					</li>
+				</ul>
+
+                <ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d23120fc8493a2161d8_jean-gale%CC%81as-visconti-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d23120fc8493a2161d8_jean-gale%CC%81as-visconti-min.jpg" data-thumbnail-width="770" data-thumbnail-height="900"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Jean Galéas Visconti (1351-1402)</p>
+						<p class="fwds3dcov-text">Noble né à Milan, Jean Galéas est resté dans l'histoire pour sa folie des grandeurs. Son palais était la plus splendide résidence princière d'Europe. Il y transféra sa célèbre bibliothèque et sa grande collection de reliques sacrées.<br>Il succomba à l'épidémie de peste de 1402, dans le château de Melegnano, laissant les caisses de l'État exsangues et une veuve en sérieuses difficultés financières</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Jean Galéas Visconti (1351-1402)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Noble né à Milan, Jean Galéas est resté dans l'histoire pour sa folie des grandeurs. Son palais était la plus splendide résidence princière d'Europe. Il y transféra sa célèbre bibliothèque et sa grande collection de reliques sacrées.<br>Il succomba à l'épidémie de peste de 1402, dans le château de Melegnano, laissant les caisses de l'État exsangues et une veuve en sérieuses difficultés financières</p>
+					</li>
+				</ul>
+
+                <ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d21f06830cfb9ada459_domenico-ghirlandaio-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d21f06830cfb9ada459_domenico-ghirlandaio-min.jpg" data-thumbnail-width="500" data-thumbnail-height="550"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Domenico Ghirlandaio (1448-1494)</p>
+						<p class="fwds3dcov-text">Domenico di Tommaso Curradi di Doffo Bigordi, appelé couramment Domenico Bigordi dit Domenico Ghirlandaio, né le 2 juin 1448 à Florence et mort de la peste le 11 janvier 1494 à Florence, est un peintre de l'école florentine.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Domenico Ghirlandaio (1448-1494)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Domenico di Tommaso Curradi di Doffo Bigordi, appelé couramment Domenico Bigordi dit Domenico Ghirlandaio, né le 2 juin 1448 à Florence et mort de la peste le 11 janvier 1494 à Florence, est un peintre de l'école florentine.</p>
+					</li>
+				</ul>
+
+                <ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d2308fe552ef7bb5e4c_don-juan-autriche-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d2308fe552ef7bb5e4c_don-juan-autriche-min.jpg" data-thumbnail-width="850" data-thumbnail-height="1000"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Don Juan D’Autriche  (1545-1578)</p>
+						<p class="fwds3dcov-text">Don Juan d’Autriche, fils illégitime de Charles Quint, victime de la peste. Il a combattu dans les armées de son demi-frère Philippe II. Il serait décédé de la peste dans un pigeonnier à Bouges lors du siège de Namur.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Don Juan D’Autriche  (1545-1578)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Don Juan d’Autriche, fils illégitime de Charles Quint, victime de la peste. Il a combattu dans les armées de son demi-frère Philippe II. Il serait décédé de la peste dans un pigeonnier à Bouges lors du siège de Namur.</p>
+					</li>
+				</ul>
+
+                <ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d238f55420081a81ae1_jerome-bosch-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d238f55420081a81ae1_jerome-bosch-min.jpg" data-thumbnail-width="810" data-thumbnail-height="1080"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">Jérôme Bosch (1450-1516)</p>
+						<p class="fwds3dcov-text">Considéré comme le premier peintre flamand "moderne" de la Renaissance, Jérôme Bosch avait peint un “Jugement dernier” dans lequel la mort des corps et des âmes était un sujet central. Il s'est éteint en 1516. Il aurait été victime de la peste. Ce membre de l'Illustre Confrérie de Notre-Dame a laissé une empreinte incontournable dans le monde de l'art.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">Jérôme Bosch (1450-1516)</p>
+						<p class="fwds3dcov-lightbox-paragraph">Considéré comme le premier peintre flamand "moderne" de la Renaissance, Jérôme Bosch avait peint un “Jugement dernier” dans lequel la mort des corps et des âmes était un sujet central. Il s'est éteint en 1516. Il aurait été victime de la peste. Ce membre de l'Illustre Confrérie de Notre-Dame a laissé une empreinte incontournable dans le monde de l'art.</p>
+					</li>
+				</ul>
+
+                <ul>
+					<li data-url="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d238f55420081a81ae1_jerome-bosch-min.jpg"></li>
+					<li data-thumbnail-path="https://uploads-ssl.webflow.com/5f7c9da27b098337bf2760aa/60535d238f55420081a81ae1_jerome-bosch-min.jpg" data-thumbnail-width="950" data-thumbnail-height="415"></li>
+					<li data-thumbnail-text="">
+						<p class="fwds3dcov-header">John Ward (1553-1622) </p>
+						<p class="fwds3dcov-text">John Ward ou Birdy, également connu sous le nom de Jack Ward, est un pirate anglais de la fin du 16e siècle qui devient un pirate barbaresque operant à partir de Tunis sous le nom de Yusuf Raïs. Jack Sparrow, le fameux héros de la saga «Pirate des Caraïbes» est un personnage inspiré de ce corsaire britannique converti à l’Islam. Après une désertion, ce dernier se retire à Tunis pour profiter du trésor de guerre qu'il a amassé et y meurt de la peste, en 1622 vers l'âge de 70 ans.</p>
+					</li>
+					<li data-info="">
+						<p class="fwds3dcov-lightbox-header">John Ward (1553-1622) </p>
+						<p class="fwds3dcov-lightbox-paragraph">John Ward ou Birdy, également connu sous le nom de Jack Ward, est un pirate anglais de la fin du 16e siècle qui devient un pirate barbaresque operant à partir de Tunis sous le nom de Yusuf Raïs. Jack Sparrow, le fameux héros de la saga «Pirate des Caraïbes» est un personnage inspiré de ce corsaire britannique converti à l’Islam. Après une désertion, ce dernier se retire à Tunis pour profiter du trésor de guerre qu'il a amassé et y meurt de la peste, en 1622 vers l'âge de 70 ans.</p>
+					</li>
+				</ul>
+		
+	</body>
+</html>
