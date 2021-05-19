@@ -6,6 +6,10 @@
 	margin-top: -7.5vh;
 }
 
+.coverflow-div * {
+	overflow: visible
+}
+
 /* Main background. */
 .fwds3dcov-main-background{}
 
