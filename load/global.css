@@ -7,7 +7,7 @@
 }
 
 #coverflowDiv * {
-	overflow: visible
+	overflow: visible !important;
 }
 
 /* Main background. */
