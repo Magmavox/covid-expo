@@ -4,7 +4,10 @@
 /* coverflow-wrapper */
 .coverflow-div {
 	margin-top: -7.5vh;
-        margin-bottom: 30px;
+}
+
+#coverflowDiv {
+    margin-bottom: 30px;
 }
 
 /* Main background. */
